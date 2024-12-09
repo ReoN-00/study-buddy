@@ -101,6 +101,12 @@ body {
   font-size: 20px !important;
   border-radius: 20px !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
+}
+
+.get-started:hover {
+  background: #4b9887!important;
+  border-color: #4b9887 !important;
 }
 
 .title:nth-child(1) {
