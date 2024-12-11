@@ -42,7 +42,7 @@
 }
 
 /* Custom button styles */
-.requestBtn {
+.sessionBtn {
   background-color: #7cfbdf;
   color: black;
   display: flex;
@@ -56,21 +56,54 @@
   transition: background-color 0.3s ease;
 }
 
+.removeBtn {
+  background-color: #fb7c7c;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: none;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
 /* Custom hover, focus, and active states */
-.requestBtn:hover,
-.requestBtn:focus,
-.requestBtn:active {
+.sessionBtn:hover,
+.sessionBtn:focus,
+.sessionBtn:active {
   background-color: #0cc89f;
   color: black;
   outline: none;
   box-shadow: none;
 }
 
-.requestBtn:focus,
-.requestBtn:active {
+.sessionBtn:focus,
+.sessionBtn:active {
   outline: none !important;
   box-shadow: none !important;
   background-color: #0cc89f !important;
+  color: black;
+}
+
+/* removeBtn effects */
+
+.removeBtn:hover,
+.removeBtn:focus,
+.removeBtn:active {
+  background-color: #f90d0d;
+  color: black;
+  outline: none;
+  box-shadow: none;
+}
+
+.removeBtn:focus,
+.removeBtn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #f90d0d !important;
   color: black;
 }
 
@@ -150,4 +183,35 @@ p {
   .sessionCards {
     grid-template-columns: 1fr; /* Single column for small screens */
   }
+}
+
+.sessionInfoTab.active {
+  color: black;
+}
+
+.custom-tabs .nav-link {
+  background-color: #b9b9b9;
+  color: #333;
+}
+
+.custom-tabs .nav-link.active {
+  background-color: white;
+  color: #000;
+  border-color: #dee2e6 #dee2e6 white;
+}
+
+#sessionModal .modal-dialog {
+  max-width: 90%; /* Optional: to make the modal wider */
+}
+
+#sessionModal .modal-content {
+  border: 10px solid #7cfbdf !important;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+#sessionModal .modal-header {
+  background-color: #7cfbdf;
+  color: black;
+  border: none;
 }
